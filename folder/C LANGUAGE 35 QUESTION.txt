@@ -1,0 +1,571 @@
+// C Programming Practice Questions
+// 1. Hello World Program
+
+// Write a program to print "Hello, World!" on the screen.
+// #include <stdio.h>
+// int main(){
+//     printf("Hello, World!");
+//     return 0;
+// }
+
+// 2. Sum of Two Numbers
+// Write a program to find the sum of two numbers the user enters.
+
+// #include <stdio.h>
+// int main(){
+//     int a=5;
+//     int b=4;
+//     printf("sum of two numbers=%d",a+b);
+// }
+
+// 3. Largest of Two Numbers
+// Write a program to find the largest of two numbers.
+
+// #include <stdio.h>
+// int main(){
+//     int a=5;
+//     int b=4;
+//     if(a>b){
+//         printf("a is greater than b");
+//     }
+//     else if(a<b){
+//       printf("b is greater than a");
+//     }
+//     else{
+//         printf("both are same");
+//     }
+//     return 0;
+// }
+
+// 4. Even or Odd
+// Write a program to check whether a given number is even or odd.
+
+// #include <stdio.h>
+// int main(){
+//     int number=7;
+//     if(number%2==0){
+//         printf("number is even");
+//     }
+//     else{
+//         printf("number is odd");
+//     }
+//     return 0;
+// }
+
+// 5. Factorial of a Number
+// Write a program to calculate the factorial of a given number.
+
+// #include <stdio.h>
+// int main(){
+//     int number=5;
+//     int factorial=1; 
+//     for(int i=1;i<=number;i++){
+//         factorial=factorial*i;
+//     }
+//     printf("%d",factorial);
+//     return 0;
+// }
+
+// 6. Reverse a Number
+// Write a program to reverse a given integer.
+
+// #include <stdio.h>
+// int main() {
+//     int num=153;
+//     int reversed=0;
+//     while(num!=0){
+//         reversed=reversed*10+num%10;
+//         num=num/10;
+//     }
+//     printf("%d",reversed);
+//     return 0;
+// }
+
+// 7. Palindrome Check
+// Write a program to check whether a given number is a palindrome.
+
+// #include <stdio.h>
+// int main() {
+//     int num=153;
+//     int reversed=0;
+//     while(num!=0){
+//         reversed=reversed*10+num%10;
+//         num=num/10;
+//     }
+//     if(num==reversed){
+//     printf("not a palindrome");
+//     }
+//     else{
+//         printf("palindrome");
+//     }
+//     return 0;
+// }
+
+// 8. Sum of Digits
+// Write a program to find the sum of digits of a given number.
+
+// #include <stdio.h>
+// int main(){
+//     int num=12;
+//     int sum=0;
+//     while(num!=0){
+//         sum=sum+num%10;
+//         num=num/10;
+//     }
+//     printf("%d",sum);
+//     return 0;
+// }
+
+// 9. Prime Number Check
+// Write a program to check whether a given number is prime.
+
+// #include <stdio.h>
+// int main(){
+//     int number=7;
+//     int count=0;
+//     for(int i=2;i<number;i++){
+//         if(number%i==0){
+//             count=count+1;
+//         }
+//     }
+//         if(count>1){
+//             printf("number is not prime");
+//         }
+//         else{
+//             printf("number is prime");
+//         }
+//     }
+
+// 10. Fibonacci Sequence
+// Write a program to print the Fibonacci sequence up to a given number of terms.
+
+// #include <stdio.h>
+// int main() {
+//   int a=0;
+//   int b=1;
+//   int n=6;
+//   for(int i=1;i<=n;i++){
+//       int c=a+b;
+//       printf("%d\n",c);
+//       a=b;
+//       b=c;
+//   }
+//   return 0;
+// }
+
+//11. GCD of Two Numbers
+//Write a program to find the greatest common divisor (GCD) of two numbers.
+
+// #include <stdio.h>
+// int main(){
+//     int a=56;
+//     int b=98;
+//     while(a!=b){
+//         if(a>b){
+//             a=a-b;
+//         }
+//         else{
+//             b=b-a;
+//         }
+//     }
+//     printf("%d",a);
+//     return 0;
+// }
+
+12. LCM of Two Numbers
+// Write a program to find the least common multiple (LCM) of two numbers.
+
+// #include <stdio.h>
+// int main() {
+//     int num1=98; 
+//     int num2=56;
+//     int a, b;
+//     a = num1;
+//     b = num2;
+//     while (a != b) {
+//         if (a > b) {
+//             a = a - b;
+//         } else {
+//             b = b - a;
+//         }
+//     }
+//     int gcd = a;
+//     int lcm = (num1 * num2) / gcd;
+
+//     printf("%d",lcm);
+
+//     return 0;
+// }
+// 13. Leap Year Check
+// Write a program to check whether a given year is a leap year.
+
+// #include <stdio.h>
+// int main(){
+//     int year=2020;
+//     if((year%4==0 && year%100!=0) || year%400==0){
+//         printf("it is a leap year");
+//     }
+//     else{
+//         printf("it is not a leap year");
+//     }
+// }
+
+// 14. Simple Calculator
+// Write a program to create a simple calculator that can add, subtract, multiply, and divide two numbers.
+
+// #include <stdio.h>
+// int main(){
+//     int a=5;
+//     int b=3;
+//     char objj='+';
+//     if(objj=='+'){
+//         printf("%d",a+b);
+//     }
+//     else if(objj=='-'){
+//         printf("%d",a-b);
+//     }
+//     else if(objj=='*'){
+//         printf("%d",a*b);
+//     }
+//     else if(objj=='/'){
+//         printf("%d",a/b);
+//     }
+//     return 0;
+// }
+
+// 15. Sum of Array Elements
+// Write a program to find the sum of all elements in an array.
+
+// #include <stdio.h>
+// int main(){
+//     int arr[7]={1,2,3,4,5,6,7};
+//     int len=sizeof(arr)/sizeof(arr[0]);
+//     int sum=0;
+//     for(int i=0;i<len;i++){
+//         sum=sum+arr[i];
+//     }
+//     printf("%d",sum);
+//     return 0;
+// }
+
+//16. Largest Element in an Array
+//Write a program to find the largest element in an array.
+
+//#include <stdio.h>
+//int main() {
+//    int array[] = {34, 7, 23, 32, 5, 62, 1};  
+//    int length = sizeof(array) / sizeof(array[0]);
+//    int largest=array[0];
+//    for (int i = 1; i < length; i++) {
+//        if (array[i] > largest) {
+//            largest = array[i];
+//        }
+//    }
+//    printf("%d", largest);
+//    return 0;
+//}
+
+// 17. String Length
+// Write a program to find the length of a string without using the built-in strlen function.
+
+// #include <stdio.h>
+// int main(){
+//     int arr[6]={1,2,3,4,5,6};
+//     int len=sizeof(arr)/sizeof(arr[0]);
+//     printf("%d",len);
+// }
+
+//18. String Reverse
+//Write a program to reverse a string.
+
+//#include <stdio.h>
+//int main(){
+//    char str[] = "Hello, World!";  
+//    int length = sizeof(str)-1;
+//    int i;
+//    char temp;
+//    for (i = 0; i < length / 2; i++) {
+//        temp = str[i];
+//        str[i] = str[length - 1 - i];
+//        str[length - 1 - i] = temp;
+//    }
+//    printf("%s", str);
+//    return 0;
+//}
+
+//19. Swapping Two Numbers
+//Write a program to swap two numbers without using a third variable.
+
+//#include <stdio.h>
+//int main() {
+//    int a = 2, b = 5;
+//    a = a + b;  
+//    b = a - b;  
+//    a = a - b; 
+//    printf("After swapping: a = %d, b = %d\n", a, b);
+//    return 0;
+//}
+
+//20. Swap Two Numbers Using Third Variable
+//Write a program to swap two numbers using a third variable.
+
+// #include <stdio.h>
+// int main(){
+//     int a=2;
+//     int b=5;
+//     int temp=a;
+//     a=b;
+//     b=temp;
+//     printf("%d,%d",a,b);
+// }
+
+//21. ASCII Value of a Character
+//Write a program to find and print the ASCII value of a character.
+
+//#include <stdio.h>
+//int main() {  
+//    char c='a';
+//     printf("%d",c);
+//    return 0;
+//}
+
+//22. Convert Celsius to Fahrenheit
+//Write a program to convert temperature from Celsius to Fahrenheit.
+//#include <stdio.h>
+//int main(){
+//    int celsius=0;
+//    float a=(1.8*celsius)+32;
+//    printf("%.f",a);
+//    return 0;
+//}
+
+//23. Convert Fahrenheit to Celsius
+//Write a program to convert temperature from Fahrenheit to Celsius.
+// #include <stdio.h>
+// int main(){
+//     int farenhit=77;
+//     float a=(farenhit-32)*5/9;
+//     printf("%.f",a);
+//     return 0;
+// }
+
+//24. Sum of First N Natural Numbers
+//Write a program to calculate the sum of the first N natural numbers.
+//#include <stdio.h>
+//int main(){
+//    int n=5;
+//    int sum=((n+1)*n)/2;
+//    printf("%d",sum);
+//    return 0;
+//}
+
+// 25. Check Vowel or Consonant
+// Write a program to check whether a given character is a vowel or consonant.
+// #include <stdio.h>
+// int main(){
+//     char str='a';
+//     if(str=='a' || str=='e' || str=='i' || str=='o' || str=='u'|| str=='A' || str=='E' || str=='I' || str=='O' || str=='U'){
+//         printf("vowel");
+//     }
+//     else{
+//         printf("consonant");
+//     }
+// }
+
+// 26. Check Alphabet, Digit, or Special Character
+// Write a program to check whether a character is an alphabet, digit, or special character.
+// #include <stdio.h>
+
+// int main() {
+//     char ch = '@';
+//     if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+//         printf("%c is an alphabet.", ch);
+//     }
+//     else if (ch >= '0' && ch <= '9') {
+//         printf("%c is a digit.", ch);
+//     }
+//     else {
+//         printf("%c is a special character.", ch);
+//     }
+//     return 0;
+// }
+
+//27. Count the Number of Digits in an Integer
+//Write a program to count the number of digits in a given integer.
+
+//#include <stdio.h>
+//int main(){
+//    char str[]="abcdefghi";
+//    int len=sizeof(str)-1;
+//    int count=0;
+//    int i=0;
+//    while(str[i]!='\0'){
+//        count++;
+//        i++;
+//    }
+//    printf("%d",count);
+//    return 0;
+//}
+
+//28. Reverse a String
+//Write a program to reverse a given string.
+
+//#include <stdio.h>
+//int main() {
+//    char str[] = "Hello, World!";  
+//    int length = sizeof(str)-1;
+//    int i;
+//    char temp;
+//    for (i = 0; i < length / 2; i++) {
+//        temp = str[i];
+//        str[i] = str[length - 1 - i];
+//        str[length - 1 - i] = temp;
+//    }
+//    printf("%s", str);
+//    return 0;
+}
+
+//29. Check the Alphabetic Order of Two Strings
+//Write a program to check whether two strings are in alphabetic order.
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+//     char str1[] = "apple";
+//     char str2[] = "banana";
+
+//     if (strcmp(str1, str2) < 0) {
+//         printf("The strings are in alphabetic order.\n");
+//     } else {
+//         printf("The strings are not in alphabetic order.\n");
+//     }
+
+//     return 0;
+// }
+
+// 30. Calculate the Power of a Number
+// Write a program to calculate the power of a number using a loop.
+
+// #include <stdio.h>
+// #include <math.h>
+// int main() {
+//     int num=81;
+//     int a=sqrt(num);
+//     if(a*a==num){
+//       printf("a raise to 2");
+//     }
+//     else if(a*a*a==num){
+//       printf("a raise to 3"); 
+//     }
+//     return 0;
+// }
+
+// 31. Print All Prime Numbers Between Two Numbers
+// Write a program to print all prime numbers between two given numbers.#include <stdio.h>
+
+// #include <stdio.h>
+// int main() {
+//     int start = 2, end = 100;
+//     for (int i = start; i <= end; i++) {
+//         int is_prime = 1; 
+//         if (i <= 1) {
+//             is_prime = 0;  
+//         } else {
+//             for (int j = 2; j * j <= i; j++) {
+//                 if (i % j == 0) {
+//                     is_prime = 0;  
+//                     break;
+//                 }
+//             }
+//         }
+//         if (is_prime) {
+//             printf("%d ", i);
+//         }
+//     }
+//     return 0;
+// }
+
+// 32. Check Armstrong Number
+// Write a program to check whether a given number is an Armstrong number.
+
+// #include <stdio.h>
+// int main() {
+//     int num = 153;  
+//     int original_num, remainder, result = 0;
+//     original_num = num;
+//     while (original_num != 0) {
+//         remainder = original_num % 10; 
+//         result += remainder * remainder * remainder;   
+//         original_num /= 10;  
+//     }
+//     if (result == num) {
+//         printf("%d is an Armstrong number.", num);
+//     } else {
+//         printf("%d is not an Armstrong number.", num);
+//     }
+//     return 0;
+// }
+
+//33. Calculate the Average of Numbers in an Array
+//Write a program to calculate the average of all the numbers in an array.
+
+//#include <stdio.h>
+//int main(){
+//    int arr[7]={1,2,3,4,5,6,7};
+//  int len=sizeof(arr)/sizeof(arr[0]);
+//  int sum=0;
+//    for(int i=0;i<len;i++){
+//        sum=sum+arr[i];
+//    }
+//    int average=sum/len;
+//    printf("%d",average);
+//    return 0;
+//}
+
+// 34. Find the Second Largest Number in an Array
+// Write a program to find the second-largest number in an array.
+// #include <stdio.h>
+
+// int main() {
+//     int arr[] = {12, 35, 1, 10, 34, 1};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     int largest = arr[0];
+//     int second_largest = -1;
+//     for (int i = 1; i < n; i++) {
+//         if (arr[i] > largest) {
+//             largest = arr[i];
+//         }
+//     }
+//     for (int i = 0; i < n; i++) {
+//         if (arr[i] > second_largest && arr[i] < largest) {
+//             second_largest = arr[i];
+//         }
+//     }
+//     if (second_largest == -1) {
+//         printf("There is no second largest element.\n");
+//     } else {
+//         printf("The second largest element is %d.\n", second_largest);
+//     }
+//     return 0;
+// }
+
+//35. Check If a Number is a Perfect Square 
+//Write a program to check if a given number is a perfect square. 
+
+//#include <stdio.h>
+//#include <math.h>
+//int main(){
+//    int square=81;
+//    int a=sqrt(square);
+//    if(a*a==square){
+//       printf("it is a perfect square");
+//  }
+//    else{
+//        printf("it is not a perfect square");
+//    }
+//}
+
+
+
+
