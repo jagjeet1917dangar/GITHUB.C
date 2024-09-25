@@ -101,7 +101,7 @@
 //     return 0;
 // }
 
-// 8. Sum of Digits
+// 8.Sum of Digits
 // Write a program to find the sum of digits of a given number.
 
 // #include <stdio.h>
@@ -116,7 +116,7 @@
 //     return 0;
 // }
 
-// 9. Prime Number Check
+// 9.Prime Number Check
 // Write a program to check whether a given number is prime.
 
 // #include <stdio.h>
@@ -196,6 +196,7 @@
 
 //     return 0;
 // }
+
 // 13. Leap Year Check
 // Write a program to check whether a given year is a leap year.
 
@@ -270,8 +271,8 @@
 
 // #include <stdio.h>
 // int main(){
-//     int arr[6]={1,2,3,4,5,6};
-//     int len=sizeof(arr)/sizeof(arr[0]);
+//     char str[]="abcd";
+//     int len=sizeof(str)-1;
 //     printf("%d",len);
 // }
 
@@ -431,7 +432,7 @@
 // #include <stdio.h>
 // #include <string.h>
 
-// int main() {
+// int main(){
 //     char str1[] = "apple";
 //     char str2[] = "banana";
 
@@ -449,7 +450,7 @@
 
 // #include <stdio.h>
 // #include <math.h>
-// int main() {
+// int main(){
 //     int num=81;
 //     int a=sqrt(num);
 //     if(a*a==num){
@@ -458,11 +459,11 @@
 //     else if(a*a*a==num){
 //       printf("a raise to 3"); 
 //     }
-//     return 0;
+//     return 0
 // }
 
 // 31. Print All Prime Numbers Between Two Numbers
-// Write a program to print all prime numbers between two given numbers.#include <stdio.h>
+// Write a program to print all prime numbers between two given numbers.
 
 // #include <stdio.h>
 // int main() {
