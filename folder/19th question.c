@@ -1,6 +1,6 @@
-19. Check if the array arr = [1, 2, 3, 4, 5] is sorted in ascending order, and print true or false.
+// 19. Check if the array arr = [1, 2, 3, 4, 5] is sorted in ascending order, and print true or false.
 
-ANSWER...
+// ANSWER...
 
 #include <stdio.h>
 int main() {
